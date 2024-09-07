@@ -1,0 +1,247 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #073042;
+}
+
+.header_black{
+  background-color: #202020;
+}
+
+.header__wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 70px;
+  height: 74px;
+}
+
+.header__logo {
+  width: 38px;
+  height: 38px;
+}
+
+.header__logo:hover {
+  transform: scale(1.2);
+}
+
+.header__link {
+  display: inline-block;
+}
+
+.header__btn-set {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0 0 0 25px;
+}
+
+.header__btn-signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 76px;
+  height: 32px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 3px;
+  background-color: #3DDC84;
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform linear 0.3s;
+}
+
+.header__btn-signin:hover {
+  box-shadow: #4285F4 2px 2px 2px;
+}
+
+.header__signup-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  margin: 0;
+  color: #fff;
+}
+
+.header__signup-text:hover {
+  text-shadow: lawngreen 1px 1px 2px;
+}
+
+.header__btn-account {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  width: 100px;
+  height: 32px;
+  background-color: #313131;
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+
+.header__btn-account:hover {
+  transform: scale(1.1);
+  text-shadow: #4285F4 1px 1px 5px;
+  box-shadow: #4285F4 1px 1px 5px;
+}
+
+.header__burger-menu-line {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  margin: 0px auto 7px;
+  transition: 0.4s;
+}
+
+.header__burger-menu-line:last-of-type {
+  margin: 0px auto 0;
+}
+
+.header__burger-menu_cross {
+  background-image: url('../../images/cross.svg');
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.header__burger-menu {
+  margin-top: 160px;
+}
+
+.header__burger-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__burger-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.header__burger-link:hover {
+  text-decoration: underline;
+}
+
+.header__burger-background {
+  background: rgba(0, 0, 0, .3);
+}
+
+.header__burger {
+  width: 28px;
+  height: 23px;
+  display: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.header__burger-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  right: 0;
+  position: fixed;
+  width: 65%;
+  height: 100vh;
+  background-color: #202020;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.header__burger-menu-container_visible {
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+}
+
+.header__burger-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  row-gap: 28px;
+}
+
+.header__wrapper_burger-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+
+}
+
+@media screen and (max-width: 1280px) {
+  .header__container {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__container {
+    padding: 0 30px;
+  }
+
+  .header__wraper {
+    margin: 0 30px;
+  }
+
+  .header__burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header__wrapper_burger {
+    display: none;
+  }
+
+  .header__btn-account_none {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__wraper {
+    margin: 0 14px;
+  }
+
+  .header__btn-signin {
+    width: 56px;
+    height: 28px;
+    font-size: 10px;
+    margin-left: 14px;
+  }
+
+  .header__signup-text {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__burger-menu-container_visible {
+    width: 100%;
+  }
+}
