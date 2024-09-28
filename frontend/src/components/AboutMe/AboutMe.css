@@ -1,0 +1,220 @@
+.aboutme {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color:#202020;
+  width: 100%;
+}
+
+.aboutme__wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 110px 70px 100px;
+}
+
+@media screen and (max-width: 1279px) {
+  .aboutme__wraper {
+    margin: 90px 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .aboutme__wraper {
+    width: calc(100% - 36px);
+    margin: 70px 18px;
+  }
+}
+
+.aboutme__title {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin: 0 0 23px 0;
+}
+
+.aboutme__title-wraper {
+  width: 100%;
+  border-bottom: 1px solid #DADADA;
+}
+
+.aboutme__elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 66px;
+  width: 100%;
+}
+
+.aboutme__text-wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .aboutme__elements {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.aboutme__text {
+  width: 100%;
+  max-width: 600px;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 99px;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutme__text {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 87px;
+    max-width: 364px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .aboutme__text {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+.aboutme__subtitle {
+  width: 100%;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 18px 0 26px;
+  mix-blend-mode: normal;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutme__subtitle{
+    font-size: 12px;
+    line-height: 18px;
+    margin: 16px 0 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .aboutme__subtitle {
+    font-size: 11px;
+    line-height: 16px;
+    margin: 20px 0;
+  }
+}
+.aboutme__text-title {
+  width: 100%;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58px;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+@media screen and (max-width: 1279px) { 
+  .aboutme__text-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .aboutme__text-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.aboutme__image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+}
+
+@media screen and (max-width: 767px) {
+  .aboutme__image-container {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.aboutme__image {
+  max-width: 270px;
+  height: 227px;
+  float: right;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1279px) { 
+
+  .aboutme__image {
+    max-width: 255px;
+    height: 307px;
+  }
+}
+
+.aboutme__image:hover {
+  box-shadow: #4285F4 2px 2px 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .aboutme__image {
+    max-width: 292px;
+    height: 352px;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.aboutme__profiles-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aboutme__profiles-item {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.aboutme__profiles-item:hover {
+  text-shadow: #4285F4 1px 1px 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .aboutme__profiles-item {
+    margin-right: 26px;
+  }
+}
+
+.aboutme__profiles-item:last-child {
+  margin-right: 0;
+}

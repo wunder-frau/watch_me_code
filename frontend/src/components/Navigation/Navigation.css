@@ -1,0 +1,49 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation__list {
+  display: flex;
+  column-gap: 16px;
+}
+
+.navigation__list-item {
+  list-style: none;
+}
+
+.navigation__movies {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: right;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity linear 0.5s;
+}
+
+.navigation__movies:hover {
+  text-shadow: #4285F4 2px 2px 1px;
+}
+
+.navigation__saved-movies {
+  color: #fff;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  text-decoration: none;
+  text-align: right;
+  transition: opacity linear 0.5s;
+}
+
+.navigation__saved-movies:hover {
+  text-shadow: #4285F4 2px 2px 1px;
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation {
+    display: none;
+  }
+}

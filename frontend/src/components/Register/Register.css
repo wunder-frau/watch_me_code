@@ -1,0 +1,118 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.register__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 70px 0;
+  max-width: 100%;
+}
+
+.register__title {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0 0 40px;
+  margin: 0;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 17px;
+}
+
+.register__label {
+  align-self: flex-start;
+  margin: 20px 0 10px;
+  color: #8B8B8B;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: normal;
+}
+
+.register__label:last-child {
+  border-bottom: none;
+}
+
+.register__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 0 8px 0;
+  margin-bottom: 17px;
+  outline: none;
+  border: none;
+  background-color: #202020;
+  text-align: left;
+  color: #8B8B8B;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  border-bottom: solid 1px #424242;
+}
+
+.register__link {
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-color: #202020;
+}
+
+.register__link-edit {
+  color: #fff;
+}
+
+.register__link-signout {
+  color: #EE3465;
+}
+
+.register__link-edit:hover {
+  text-shadow:  #EE3465 2px 2px 2px;
+}
+
+.register__link-signout:hover {
+  text-shadow:  blue 2px 2px 2px;
+}
+
+.register__logo {
+  width: 38px;
+  height: 38px;
+  padding-bottom: 40px;
+}
+
+.register__logo:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1024px) {
+  .register__container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 232px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .register__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 56px 0 30px;
+  }
+}
