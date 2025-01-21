@@ -1,0 +1,218 @@
+.techs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  background-color:#272727;
+}
+
+.techs__wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 100px 70px;
+}
+
+@media screen and (max-width: 1279px) {
+  .techs__wraper {
+    margin: 90px 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .techs__wraper {
+    margin: 70px auto;
+  }
+}
+
+.techs__title-wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.techs__title {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin: 0 0 23px 0;
+}
+
+.techs__category-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin: 73px 0 23px 0;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1279px) {
+  .techs__title {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .techs__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 28px;
+  }
+}
+
+.techs__title-wraper {
+  width: 100%;
+  border-bottom: 1px solid #DADADA;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .techs__title-wraper {
+    width: calc(100% - 36px);
+    border-bottom: 1px solid #000;
+  }
+}
+
+.techs__text-container {
+  margin: 90px auto 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .techs__text-container {
+    margin: 80px auto 0;
+  }
+}
+
+.techs__text {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  width: 460px;
+  margin: 26px auto 100px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1279px) {
+  .techs__text {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 22px auto 83px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .techs__text {
+    font-size: 11px;
+    line-height: 16px;
+    margin: 24px auto 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .techs__text {
+    width: 292px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+.techs__text-title {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 58px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .techs__text-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.techs__icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .techs__icon-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 84px);
+    grid-template-rows: repeat(1, minmax);
+    grid-gap: 10px;
+    margin: 0 auto;
+  }
+}
+
+.techs__icon {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #303030;
+  border-radius: 10px;
+  width: 90px;
+  height: 60px;
+  margin-right: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.techs__icon:hover {
+  transform: scale(1.1);
+  box-shadow: #4285F4 1px 1px 5px;
+  text-shadow: #4285F4 1px 1px 1px;
+}
+
+@media screen and (max-width: 1279px) {
+  .techs__icon {
+    font-size: 12px;
+    line-height: 15px;
+    width: 84px;
+    height: 57px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .techs__icon {
+    margin: 0;
+  }
+}
+
+.techs__icon:last-of-type {
+  margin-right: 0;
+}
