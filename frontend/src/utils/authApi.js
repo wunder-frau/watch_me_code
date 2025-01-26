@@ -1,4 +1,4 @@
-export const BASE_URL = "https://iresta.rest/me-api"; //"http://localhost:5001";
+export const BASE_URL = "https://me.iresta.rest/me-api"; //"http://localhost:5001";
 
 const checkResponse = (res) => {
   if (res.ok) {

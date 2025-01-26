@@ -17,7 +17,7 @@ const { BASE_URL = "mongodb://localhost:27017/moviesdb" } = process.env;
 const app = express();
 
 const allowedCors = [
-  "https://iresta.rest",
+  "https://me.iresta.rest",
   "http://localhost:5000",
   "http://localhost:5001",
 ];
