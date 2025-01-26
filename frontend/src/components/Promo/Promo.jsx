@@ -6,7 +6,7 @@ function Promo() {
         <div className='promo'>
         {/* <img src={logoPracticum} alt='logo' className='promo__logo'/> */}
           <h1 className='promo__title'>
-            Hi there!
+            Hello, World! Watch me code!
             {/* &#8209;*/}
           </h1>
         </div>
