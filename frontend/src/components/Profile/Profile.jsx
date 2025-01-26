@@ -70,7 +70,8 @@ function Profile({
               autoComplete="off"
               minLength="2"
               maxLength="40"
-              pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+              // pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+              pattern="/^[\w]+([.\-]?\w+)*@\w+([.\-]?\w+)*(\.\w{2,3})+$/"
               required
             />
           </label>
