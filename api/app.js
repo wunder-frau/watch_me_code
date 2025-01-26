@@ -18,9 +18,8 @@ const app = express();
 
 const allowedCors = [
   "https://iresta.rest",
-  "https://api.iresta.rest",
-  "http://localhost:3000",
   "http://localhost:5000",
+  "http://localhost:5001",
 ];
 
 app.use(
@@ -61,7 +60,7 @@ app.use(requestLogger);
 app.use(limiter);
 
 app.post(
-  "/signup",
+  "/me-api/signup",
   celebrate({
     body: Joi.object().keys({
       name: Joi.string().min(2).max(30),
@@ -74,7 +73,7 @@ app.post(
   createUser
 );
 app.post(
-  "/signin",
+  "/me-api/signin",
   celebrate({
     body: Joi.object().keys({
       email: Joi.string().email().required(),
@@ -84,8 +83,8 @@ app.post(
   login
 );
 
-app.use("/", auth, require("./routes/users"));
-app.use("/", auth, require("./routes/movies"));
+app.use("/me-api", auth, require("./routes/users"));
+app.use("/me-api", auth, require("./routes/movies"));
 
 app.use("*", (req, res, next) => {
   next(new NotFound("The requested resource was not found"));
@@ -97,5 +96,6 @@ app.use(errors());
 app.use(errorsHandler);
 
 app.listen(PORT, () => {
+  // eslint-disable-next-line no-console
   console.log(`Example app listening at http://localhost:${PORT}`);
 });
