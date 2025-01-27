@@ -3,15 +3,17 @@ import './Promo.css'
 
 function Promo() {
   return (
-        <div className='promo'>
-        {/* <img src={logoPracticum} alt='logo' className='promo__logo'/> */}
-          <h1 className='promo__title'>
-          <h1 className='promo__title'>
-          Check out my portfolio below, and sign in to filter movies!
-          </h1>
-            {/* &#8209;*/}
-          </h1>
-        </div>
+    <div className='promo'>
+      <h1 className='promo__title'>
+        <b style={{ paddingTop: '10px', display: 'block' }}>Iryna Stasheuski</b>
+        <br />
+          <span>
+            Check out my portfolio below
+             <br />
+            or sign in to filter movies!
+          </span>
+      </h1>
+    </div>
   );
 }
 
