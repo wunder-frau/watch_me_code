@@ -5,7 +5,21 @@ function Portfolio() {
   return (
     <div className='portfolio'>
       <div className='portfolio__wraper'>
-        <h2 className='portfolio__title'>Portfolio</h2>
+        <h2 className='portfolio__title'>Check out more</h2>
+        <ul className='portfolio__list'>
+        <a href='https://iresta.rest/' className='portfolio__link' rel='noreferrer' target='_blank'>
+            <li className='portfolio__list-element'>
+              <div>QuickPic</div>
+              <div className='portfolio__arrow' alt='arrow'>↗</div>
+            </li>
+          </a>
+          {/* <a href='https://wunder-frau.github.io/russian-travel' className='portfolio__link' rel='noreferrer' target='_blank'>
+            <li className='portfolio__list-element'>
+              <div>Responsive Website</div>
+              <div className='portfolio__arrow' alt='arrow'>↗</div>
+            </li>
+          </a> */}
+        </ul>
         {/* <ul className='portfolio__list'>
           <a href='https://github.com/wunder-frau/how-to-learn' className='portfolio__link' rel='noreferrer' target='_blank'>
             <li className='portfolio__list-element'>

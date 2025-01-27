@@ -10,7 +10,7 @@ function Techs() {
         </div>
         <div className='techs__text-container'>
           <h3 className='techs__text-title'>
-            Technologies from My Resume
+            My Stack
           </h3>
           <div className='techs__text'>
             In my work experience, I have mastered various technologies that I have used in real projects.

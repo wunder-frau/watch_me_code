@@ -5,9 +5,9 @@ function NavTab() {
   return (
         <nav className='navtab'>
           <ul className='navtab__list'>
-            <a className='navtab__element' href='#aboutproject'>
+            {/* <a className='navtab__element' href='#aboutproject'>
               <li className='navtab__element'>About Project</li>
-            </a>
+            </a> */}
             <a className='navtab__element' href='#techs'>
               <li className='navtab__element'>Technology</li>
             </a>
